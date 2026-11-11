@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Cert Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/home"><span class="logo">&gt;_</span> Claude Cert Lab</a>
+  <nav id="nav">
+    <a href="#/home" data-r="home">Dashboard</a>
+    <a href="#/learn" data-r="learn">Learn</a>
+    <a href="#/practice" data-r="practice">Practice</a>
+    <a href="#/exam" data-r="exam">Mock Exam</a>
+    <a href="#/labs" data-r="labs">Labs</a>
+    <a href="#/plan" data-r="plan">Study Plan</a>
+    <a href="#/resources" data-r="resources">Resources</a>
+  </nav>
+  <div class="track-switch">
+    <select id="trackSel" aria-label="Certification track">
+      <option value="developer">CCDV-F · Developer</option>
+      <option value="architect">CCAR-F · Architect</option>
+    </select>
+    <button id="themeBtn" class="ghost" title="Toggle theme">◐</button>
+  </div>
+</header>
+<main id="app"></main>
+<footer class="foot">Unofficial study platform. Practice questions are original and are not real exam items. Check Anthropic's official exam guide for current details.</footer>
+<script src="data/developer.js"></script>
+<script src="data/architect.js"></script>
+<script src="data/extra-developer.js"></script>
+<script src="data/extra-architect.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
